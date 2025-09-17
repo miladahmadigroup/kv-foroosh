@@ -1,0 +1,189 @@
+/* assets/css/vazir.css - فونت وزیر */
+
+/* Vazir Font Face Definitions */
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Medium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Black.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Light Weight */
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Thin Weight */
+@font-face {
+    font-family: 'Vazir';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Thin.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Vazir-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Apply Vazir font to all elements */
+* {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Ensure proper Persian/Farsi text rendering */
+body {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Fix for English text mixed with Persian */
+.en {
+    direction: ltr;
+    text-align: left;
+    display: inline-block;
+}
+
+/* Number formatting for Persian */
+.persian-numbers {
+    font-feature-settings: 'tnum';
+}
+
+/* Improve readability for small text */
+small, .small {
+    font-size: 0.875em;
+    line-height: 1.4;
+}
+
+/* Better spacing for Persian text */
+p, div, span {
+    line-height: 1.8;
+}
+
+/* Fix for Bootstrap components */
+.btn, .form-control, .form-select, .card, .alert {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Navbar font fixes */
+.navbar-brand, .nav-link {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Table font fixes */
+.table th, .table td {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Modal font fixes */
+.modal-title, .modal-body, .modal-footer {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Dropdown font fixes */
+.dropdown-menu .dropdown-item {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Badge and label font fixes */
+.badge, .label {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Breadcrumb font fixes */
+.breadcrumb-item {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Pagination font fixes */
+.page-link {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Toast and popover font fixes */
+.toast, .popover {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Code elements should use monospace but with Vazir fallback */
+code, kbd, pre, samp {
+    font-family: 'Vazir Code', 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
+}
+
+/* Ensure proper font rendering on different devices */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* RTL improvements */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="ltr"] {
+    text-align: left;
+}
+
+/* Improve Persian punctuation */
+.persian-text {
+    word-spacing: 0.1em;
+    letter-spacing: 0.02em;
+}
+
+/* Better line height for Persian text */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.6;
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* Ensure consistent font weight */
+.fw-light { font-weight: 300 !important; }
+.fw-normal { font-weight: 400 !important; }
+.fw-medium { font-weight: 500 !important; }
+.fw-bold { font-weight: 700 !important; }
+.fw-bolder { font-weight: 900 !important; }
+
+/* Loading fallback */
+.vazir-loading {
+    font-family: 'Tahoma', Arial, sans-serif;
+    transition: font-family 0.3s ease;
+}
+
+.vazir-loaded {
+    font-family: 'Vazir', 'Tahoma', Arial, sans-serif;
+}

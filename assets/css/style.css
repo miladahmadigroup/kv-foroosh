@@ -1,0 +1,466 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+:root {
+    --primary-color: #28a745;
+    --primary-dark: #1e7e34;
+    --primary-light: #d4edda;
+    --secondary-color: #6c757d;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --purple-color: #6f42c1;
+    --indigo-color: #6610f2;
+    --pink-color: #e83e8c;
+    --orange-color: #fd7e14;
+    --font-family: 'Vazir', 'Tahoma', sans-serif;
+}
+
+/* Fix Font Awesome Icons */
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+/* Font Awesome fallback for older versions */
+.fa {
+    font-family: "FontAwesome", "Font Awesome 6 Free", "Font Awesome 5 Free" !important;
+}
+
+/* Override Font Awesome font family conflict */
+.fas, .far, .fab, .fa {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+* {
+    font-family: var(--font-family) !important;
+}
+
+/* اما آیکون‌ها را از این قانون استثنا کن */
+.fas, .far, .fab, .fa, [class^="fa-"], [class*=" fa-"] {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+body {
+    font-family: var(--font-family);
+    direction: rtl;
+    text-align: right;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+/* دکمه‌های رنگی */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #20a844 100%);
+    border: none;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #1e7e34 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.btn-info {
+    background: linear-gradient(135deg, var(--info-color) 0%, #138496 100%);
+    border: none;
+    color: white;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--warning-color) 0%, #e0a800 100%);
+    border: none;
+    color: #212529;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger-color) 0%, #c82333 100%);
+    border: none;
+    color: white;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #20a844 100%) !important;
+}
+
+.bg-info {
+    background: linear-gradient(135deg, var(--info-color) 0%, #138496 100%) !important;
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color) 0%, #e0a800 100%) !important;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, var(--success-color) 0%, #1e7e34 100%) !important;
+}
+
+.bg-purple {
+    background: linear-gradient(135deg, var(--purple-color) 0%, #59359a 100%) !important;
+}
+
+.bg-indigo {
+    background: linear-gradient(135deg, var(--indigo-color) 0%, #520dc2 100%) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-purple {
+    color: var(--purple-color) !important;
+}
+
+.text-orange {
+    color: var(--orange-color) !important;
+}
+
+/* ناوبری با گرادیانت زیبا */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+/* کارت‌ها با طراحی مدرن */
+.card {
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(23, 162, 184, 0.1) 100%);
+    border-bottom: 1px solid rgba(40, 167, 69, 0.2);
+    font-weight: 600;
+    border-radius: 16px 16px 0 0 !important;
+}
+
+/* کارت‌های داشبورد رنگی */
+.dashboard-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+.dashboard-card.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%) !important;
+}
+
+.dashboard-card.bg-success {
+    background: linear-gradient(135deg, var(--success-color) 0%, var(--primary-color) 100%) !important;
+}
+
+.dashboard-card.bg-info {
+    background: linear-gradient(135deg, var(--info-color) 0%, var(--purple-color) 100%) !important;
+}
+
+.dashboard-card.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color) 0%, var(--orange-color) 100%) !important;
+}
+
+/* فرم‌ها */
+.form-control {
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.15);
+    background-color: white;
+    transform: translateY(-1px);
+}
+
+.form-select {
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+/* صفحه ورود */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, 
+        rgba(40, 167, 69, 0.1) 0%, 
+        rgba(23, 162, 184, 0.1) 50%, 
+        rgba(111, 66, 193, 0.1) 100%);
+}
+
+.login-card {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: none;
+    backdrop-filter: blur(10px);
+}
+
+/* سایدبار */
+.sidebar {
+    background: linear-gradient(180deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(248, 249, 250, 0.95) 100%);
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.08);
+    min-height: calc(100vh - 56px);
+    backdrop-filter: blur(10px);
+}
+
+.sidebar .nav-link {
+    color: #495057;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.sidebar .nav-link:hover {
+    background: linear-gradient(135deg, 
+        rgba(40, 167, 69, 0.1) 0%, 
+        rgba(23, 162, 184, 0.1) 100%);
+    color: var(--primary-color);
+    transform: translateX(-3px);
+}
+
+.sidebar .nav-link.active {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.sidebar .nav-link i {
+    margin-left: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* جداول */
+.table {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background: linear-gradient(135deg, 
+        rgba(40, 167, 69, 0.1) 0%, 
+        rgba(23, 162, 184, 0.1) 100%);
+    border-color: rgba(40, 167, 69, 0.2);
+    font-weight: 600;
+    color: #495057;
+}
+
+.table-hover tbody tr:hover {
+    background: linear-gradient(135deg, 
+        rgba(40, 167, 69, 0.05) 0%, 
+        rgba(23, 162, 184, 0.05) 100%);
+}
+
+/* صفحه‌بندی */
+.pagination .page-link {
+    color: var(--primary-color);
+    border-radius: 8px;
+    border: none;
+    margin: 0 2px;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.pagination .page-item.active .page-link {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+    border: none;
+}
+
+/* تصاویر */
+.image-preview {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.image-preview:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* نمایش قیمت */
+.price-display {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* بج‌ها */
+.badge {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+.badge.bg-info {
+    background: linear-gradient(135deg, var(--info-color) 0%, var(--purple-color) 100%) !important;
+}
+
+.badge.bg-success {
+    background: linear-gradient(135deg, var(--success-color) 0%, var(--primary-color) 100%) !important;
+}
+
+.badge.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color) 0%, var(--orange-color) 100%) !important;
+    color: #212529;
+}
+
+.badge.bg-danger {
+    background: linear-gradient(135deg, var(--danger-color) 0%, var(--pink-color) 100%) !important;
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* اسکرول بار سفارشی */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #138496 100%);
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 56px;
+        right: -280px;
+        width: 280px;
+        height: calc(100vh - 56px);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .sidebar.show {
+        right: 0;
+        box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* حالت تاریک برای کارت‌هایی که نیاز دارند */
+.dark-card {
+    background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+    color: white;
+}
+
+.dark-card .card-header {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* افکت‌های ویژه */
+.glow {
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.5);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
